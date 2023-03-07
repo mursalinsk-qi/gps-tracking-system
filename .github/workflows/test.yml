@@ -1,5 +1,8 @@
 name: go-test
 on: [push]
+env:
+  GOPATH: ${{ github.workspace }}
+  GOBIN: ${{ github.workspace }}/bin
 jobs:
   go-test:
     runs-on: ubuntu-latest
