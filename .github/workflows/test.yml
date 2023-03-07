@@ -12,7 +12,7 @@ jobs:
           cache: true
       - name: Install dependencies
         run: |
-          export PATH=$PATH:$(go env GOPATH)/bingo get .
+          export PATH=$PATH:$(go env GOPATH)/bin
           go get .
       - name: Test
         run: go test -v ./...
